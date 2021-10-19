@@ -80,6 +80,7 @@
       </tbody>
     </table>
   </div>
+  <button class="button">Click Me</button>
 </template>
 
 <script>
@@ -87,6 +88,7 @@ export default {
   name: "TodoApp",
   props: {
     msg: String,
+   
   },
 
   data() {
@@ -134,6 +136,7 @@ export default {
       if (++presIndex > 2) presIndex = 0;
       this.tasks[index].status = this.availableStatuses[presIndex];
     },
+   
   },
 };
 </script>
@@ -144,5 +147,15 @@ export default {
 }
 .finished {
   text-decoration: line-through;
+}
+.button{
+  background-color: aqua;
+  border-radius: 1px;
+  width:120px;
+  height: 45px;
+  padding:5px;
+  margin:15px 50px 30px 550px;
+  
+
 }
 </style>
